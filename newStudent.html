@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register a new student</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="performance.html">Performance</a>
+      <a href="contactsKasolongo.html">Contacts</a>
+      <a href="newStudent.html">New Student</a>
+      <a href="login.html">Log in</a>
+    </nav>
+
+    <h1>Register a new student</h1>
+
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Student details</legend>
+        <p>
+          <label for="first_name">First name</label
+          ><input
+            type="text"
+            name="first_name"
+            id="first_name"
+            autocomplete="on"
+            autocapitalize="on"
+            required
+          />
+        </p>
+        <p>
+          <label for="last_name">Last name</label
+          ><input type="text" name="last_name" id="last_name" required />
+        </p>
+        <p>
+          <label for="year_of_birth">Year of birth</label
+          ><input
+            type="number"
+            name="year_of_birth"
+            id="year_of_birth"
+            min="2000"
+            max="2026"
+            required
+          />
+        </p>
+        <p>
+          <label for="age">Age</label
+          ><input type="number" name="age" id="age" min="3" max="25" required />
+        </p>
+        <p>Underlying health issue?</p>
+        <p>
+          <input
+            type="radio"
+            name="health_issue"
+            id="health_yes"
+            value="yes"
+            required
+          /><label for="health_yes">Yes</label>
+          <input
+            type="radio"
+            name="health_issue"
+            id="health_no"
+            value="no"
+          /><label for="health_no">No</label>
+        </p>
+        <p id="health-details" hidden>
+          <label for="health_issue_details">Describe the issue</label>
+          <textarea
+            name="health_issue_details"
+            id="health_issue_details"
+            rows="4"
+            placeholder="Please provide relevant details"
+          ></textarea>
+        </p>
+        <p>
+          <label for="grade">Grade</label>
+          <select name="grade" id="grade" required>
+            <option value="">Choose a grade</option>
+            <option value="Grade 1">Grade 1</option>
+            <option value="Grade 2">Grade 2</option>
+            <option value="Grade 3">Grade 3</option>
+            <option value="Grade 4">Grade 4</option>
+            <option value="Grade 5">Grade 5</option>
+            <option value="Grade 6">Grade 6</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Parent or guardian details</legend>
+        <p>
+          <label for="guardian_first_name">First name</label
+          ><input
+            type="text"
+            name="guardian_first_name"
+            id="guardian_first_name"
+            required
+          />
+        </p>
+        <p>
+          <label for="guardian_last_name">Last name</label
+          ><input
+            type="text"
+            name="guardian_last_name"
+            id="guardian_last_name"
+            required
+          />
+        </p>
+        <p>
+          <label for="guardian_phone">Phone number</label
+          ><input
+            type="tel"
+            name="guardian_phone"
+            id="guardian_phone"
+            required
+          />
+        </p>
+        <p>
+          <label for="guardian_email">Email</label
+          ><input type="email" name="guardian_email" id="guardian_email" />
+        </p>
+        <p>Relationship to the student</p>
+        <p>
+          <input
+            type="radio"
+            name="relationship"
+            id="relationship_parent"
+            value="parent"
+            required
+          /><label for="relationship_parent">Parent</label>
+          <input
+            type="radio"
+            name="relationship"
+            id="relationship_guardian"
+            value="guardian"
+          /><label for="relationship_guardian">Guardian</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        <p>
+          <input
+            type="checkbox"
+            name="heard_about"
+            id="heard_facebook"
+            value="Facebook"
+          /><label for="heard_facebook">Facebook</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="heard_about"
+            id="heard_twitter"
+            value="Twitter"
+          /><label for="heard_twitter">Twitter</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="heard_about"
+            id="heard_email"
+            value="Email"
+          /><label for="heard_email">Email</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="heard_about"
+            id="heard_other"
+            value="Other"
+          /><label for="heard_other">Other</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Terms and conditions</legend>
+        <p>
+          Please confirm that you have read and understood our terms and
+          conditions.
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="terms"
+            id="terms_accept"
+            value="accept"
+            required
+          /><label for="terms_accept">Accept</label>
+          <input
+            type="radio"
+            name="terms"
+            id="terms_reject"
+            value="reject"
+          /><label for="terms_reject">Reject</label>
+        </p>
+      </fieldset>
+
+      <button type="submit">Register student</button>
+      <button type="reset">Clear all</button>
+      <a href="index.html">Back to Home</a>
+    </form>
+    <script>
+      const healthYes = document.querySelector("#health_yes");
+      const healthNo = document.querySelector("#health_no");
+      const healthDetails = document.querySelector("#health-details");
+      const healthDescription = document.querySelector("#health_issue_details");
+
+      function toggleHealthDetails() {
+        const needsDetails = healthYes.checked;
+        healthDetails.hidden = !needsDetails;
+        healthDescription.required = needsDetails;
+      }
+
+      healthYes.addEventListener("change", toggleHealthDetails);
+      healthNo.addEventListener("change", toggleHealthDetails);
+    </script>
+  </body>
+</html>

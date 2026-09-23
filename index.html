@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Student registry</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="img/1782211085820.jpg" type="image/jpg+xml" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="staff.html">Staff</a>
+      <a href="word_page.html">Foreword</a>
+      <a href="performance.html">Performance</a>
+      <a href="contactsKasolongo.html">Contacts</a>
+      <a href="exam.html">Enter Results</a>
+      <a href="table.html">Rankings</a>
+      <a href="newStudent.html">New Student</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="login.html">Admin Login</a>
+    </nav>
+
+    <header class="school-intro">
+      <p class="eyebrow">Welcome to</p>
+      <h1>Kasolongo Primary School</h1>
+      <div class="school-values">
+        <section>
+          <h2>Our Motto</h2>
+          <p>Strive for success.</p>
+        </section>
+        <section>
+          <h2>Our Vision</h2>
+          <p>Creating a holistic society through better education.</p>
+        </section>
+        <section>
+          <h2>Our Mission</h2>
+          <p>
+            To provide quality education that develops confident, responsible,
+            and well-rounded learners.
+          </p>
+        </section>
+      </div>
+    </header>
+
+    <section class="foreword" aria-labelledby="foreword-heading">
+      <p class="eyebrow">A message from school leadership</p>
+      <h2 id="foreword-heading">Foreword from the school heads</h2>
+
+      <article class="foreword-message">
+        <figure>
+          <img
+            src="img/1782211085820.jpg"
+            alt="The head teacher"
+            width="200"
+            height="200"
+          />
+          <figcaption>The Head Teacher</figcaption>
+        </figure>
+        <div>
+          <h3>The Head Teacher</h3>
+          <p>
+            Education contributes to a balanced and thriving society. Without
+            education, the world would not be able to develop, connect, and
+            benefit from the inventions that shape our lives today.
+          </p>
+          <p>
+            The role of teachers in every child's life can never be overlooked.
+            God has blessed this school with hardworking teachers who, together
+            with me, continue to move the school forward.
+          </p>
+          <p>
+            We have seen a positive change in our mean score in recent years,
+            reaching 350 marks in 2025. I thank every teacher who remained
+            committed and helped us achieve that milestone.
+          </p>
+          <p>
+            Our disciplined students have also contributed greatly to this
+            achievement. I thank their parents for their continued cooperation
+            and support.
+          </p>
+          <p><strong>May God bless you.</strong></p>
+        </div>
+      </article>
+
+      <article class="foreword-message">
+        <figure>
+          <img
+            src="img/20251225_100411_099.jpg"
+            alt="The deputy head teacher"
+            width="200"
+            height="200"
+          />
+          <figcaption>The Deputy Head Teacher</figcaption>
+        </figure>
+        <div>
+          <h3>The Deputy Head Teacher</h3>
+          <p>
+            I smile when I remember how far we have come. Since the school was
+            established, it has never experienced progress as significant as the
+            change we are seeing today.
+          </p>
+          <p>
+            We have worked with the entire Kasolongo community to provide the
+            best possible education for our children.
+          </p>
+          <p><strong>May God bless us all.</strong></p>
+        </div>
+      </article>
+    </section>
+
+    <h2>Student registry</h2>
+    <p><a class="button" href="newStudent.html">Register a student</a></p>
+
+    <h2>View students by grade</h2>
+    <form method="get" action="index.html">
+      <label for="grade">Choose a grade</label>
+      <select name="grade" id="grade" required>
+        <option value="">Select grade</option>
+        <option value="Grade 1">Grade 1</option>
+        <option value="Grade 2">Grade 2</option>
+        <option value="Grade 3">Grade 3</option>
+        <option value="Grade 4">Grade 4</option>
+        <option value="Grade 5">Grade 5</option>
+        <option value="Grade 6">Grade 6</option>
+        <option value="Grade 7">Grade 7</option>
+        <option value="Grade 8">Grade 8</option>
+        <option value="Grade 9">Grade 9</option>
+      </select>
+      <button type="submit">View registry</button>
+    </form>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Year of birth</th>
+            <th>Parent/Guardian</th>
+            <th>Registered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Mutua</td>
+            <td>Grade 1</td>
+            <td>2019</td>
+            <td>Mary Mutua</td>
+            <td>2025-01-12</td>
+          </tr>
+          <tr>
+            <td>Kevin Muthoni</td>
+            <td>Grade 4</td>
+            <td>2016</td>
+            <td>David Muthoni</td>
+            <td>2025-02-18</td>
+          </tr>
+          <tr>
+            <td>Grace Njeri</td>
+            <td>Grade 7</td>
+            <td>2013</td>
+            <td>Joseph Njeri</td>
+            <td>2025-03-08</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section class="social-page" aria-labelledby="social-heading">
+      <h2 id="social-heading">Follow us on social media</h2>
+      <div class="social-links">
+        <a
+          class="social-link x-link"
+          href="https://x.com/evansmangeli"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Evans Mangeli on X"
+          title="Visit Evans Mangeli on X"
+        >
+          <span class="x-icon" aria-hidden="true">𝕏</span>
+          <span>X</span>
+        </a>
+        <a
+          class="social-link instagram-link"
+          href="https://instagram.com/evansmangeli"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Evans Mangeli on Instagram"
+          title="Visit Evans Mangeli on Instagram"
+        >
+          <span class="instagram-icon" aria-hidden="true">◎</span>
+          <span>Instagram</span>
+        </a>
+        <a
+          class="social-link phone-link"
+          href="tel:+254722110178"
+          aria-label="Call Kasolongo Primary School"
+          title="Call Kasolongo Primary School"
+        >
+          <span class="phone-icon" aria-hidden="true">☎</span>
+          <span>Phone</span>
+        </a>
+        <a
+          class="social-link whatsapp-link"
+          href="https://wa.me/254722110178"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with Kasolongo Primary School on WhatsApp"
+          title="Chat with Kasolongo Primary School on WhatsApp"
+        >
+          <span class="whatsapp-icon" aria-hidden="true">◔</span>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+    <a href="index.html">Back to Top</a>
+
+    <hr />
+    <p>All rights reserved. Copyright&copy; 2026</p>
+  </body>
+</html>

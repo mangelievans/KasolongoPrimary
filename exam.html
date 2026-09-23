@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter student results</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="exam.html">Enter Results</a>
+      <a href="table.html">Rankings</a>
+      <a href="newStudent.html">New Student</a>
+      <a href="login.html">Log in</a>
+    </nav>
+
+    <h1>Enter student results</h1>
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Student details</legend>
+        <p>
+          <label for="student_name">Student name</label
+          ><input type="text" name="student_name" id="student_name" required />
+        </p>
+        <p>
+          <label for="admission_number">Admission number</label
+          ><input
+            type="text"
+            name="admission_number"
+            id="admission_number"
+            required
+          />
+        </p>
+        <p>
+          <label for="grade">Grade</label>
+          <select name="grade" id="grade" required>
+            <option value="">Select grade</option>
+            <option value="Grade 1">Grade 1</option>
+            <option value="Grade 2">Grade 2</option>
+            <option value="Grade 3">Grade 3</option>
+            <option value="Grade 4">Grade 4</option>
+            <option value="Grade 5">Grade 5</option>
+            <option value="Grade 6">Grade 6</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Marks</legend>
+        <p>
+          <label for="maths">Mathematics</label
+          ><input
+            type="number"
+            name="maths"
+            id="maths"
+            min="0"
+            max="100"
+            required
+          />
+        </p>
+        <p>
+          <label for="english">English</label
+          ><input
+            type="number"
+            name="english"
+            id="english"
+            min="0"
+            max="100"
+            required
+          />
+        </p>
+        <p>
+          <label for="kiswahili">Kiswahili</label
+          ><input
+            type="number"
+            name="kiswahili"
+            id="kiswahili"
+            min="0"
+            max="100"
+            required
+          />
+        </p>
+        <p>
+          <label for="science">Science</label
+          ><input
+            type="number"
+            name="science"
+            id="science"
+            min="0"
+            max="100"
+            required
+          />
+        </p>
+        <p>
+          <label for="social_studies">Social Studies</label
+          ><input
+            type="number"
+            name="social_studies"
+            id="social_studies"
+            min="0"
+            max="100"
+            required
+          />
+        </p>
+      </fieldset>
+      <button type="submit">Save results</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
